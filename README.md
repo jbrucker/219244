@@ -1,4 +1,4 @@
-
+## [Schedule](Schedule.md) of weekly assignments and topics.
 
 ## Feedback and Results
 [Feedback on Vision and Mock-up](https://github.com/SSD2015/219244/wiki/Vision%20Feedback) for 10 Feb assignment.
