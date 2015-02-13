@@ -53,7 +53,7 @@ Form a team of 3-5 people for the class term project, which will begin next week
 ### Week 1
 A "mini-project" as overview of what you will do during your own software project for this course.
 
-For today you will work in teams of 5.  You may change your team later for your course project.
+For today you will work in teams of 5.  You may choose a _different_ team later for the course project, so don't spend a lot of time selecting a team now.
 
 The activities to perform are:
 
