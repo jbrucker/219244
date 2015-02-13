@@ -1,28 +1,35 @@
 lso check the Wiki of the [https://github.com/SSD2015 SSD2105] organization on Github.
 
-### Week 4
+### Week 4 Lab
 UML Sequence Diagram practice (reschedule from week3)<br>
 Review of Requirements and Use Cases<br>
 Domain Modeling
 
-### Week 3
+#### Week 4 Assignment
+1. Revise and improve your Use Cases, Vision, and Mock-up.
+2. Create a domain model.  You should have at least one domain class diagram and one or more sequence diagrams.  These may be sketches (don't have to be beautiful).
+3. Add terms to your Glossary that explain important concept classes in domain model. For example, if you have a class named "Registrar" then explain what it is! 
+4. Be prepared to explain your Domain Model in lab next week!  2-3 teams will be selected to present.
+
+### Week 3 Lab
 Quiz on git<br>
 Meet the customer!
 
-''Assignment'': Each team should create a project on Github. On this site create:
-* ''Vision Statement'' including Mock-up of the UI.  "Mock-up" is not just some wishful sketch: it must show how the application will be used (screen-by-screen) and how it fulfills the customer's primary use case requirements.
-* ''Glossary'' file containing terms you learned from the customer, plus any significant terms you learn from your own research.
-* ''Informal Use Cases'' short descriptions of customer's requirements.  Number them UC1, UC2, etc.
-* ''Supplementary Requirements'' document containing non-functional requirements, or any requirements not expressed as Use Cases.
-* ''New'': Compare Java Web Frameworks and write a summary of your findings:  [https://docs.google.com/a/ku.th/document/d/1xlXVHID-iYFiBKE4NBcXaZBr-qxSd6Byfk4dyj6_gcc http://goo.gl/9erztx]
+#### Week 3 Assignment
+Each team should create a project on Github. On this site create:
+1. _Vision Statement_ including Mock-up of the UI.  _Mock-up_ is not just some wishful sketch: it must show how the application will be used (screen-by-screen) and how it fulfills the customer's primary use case requirements.
+2. _Glossary_ file containing terms you learned from the customer, plus any significant terms you learn from your own research.
+3. _Informal Use Cases_ short descriptions of customer's requirements.  Number them UC1, UC2, etc.
+4. _Supplementary Requirements_ document containing non-functional requirements, or any requirements not expressed as Use Cases.
+5 _Comparison of Java Web Frameworks_: Select some frameworks, use them to create a project, and write a summary of your findings.  See: http://goo.gl/9erztx  
+__Due__: Tuesday, 10 Feb, on Github.
 
-''Due'': Tuesday, 10 Feb, on Github.
-
-### Week 2
-UML Practice
+### Week 2 Lab
+UML Practice  
 Git practice (game)
 
-''Assignment'': Form a team of not more than 5 people for the class term project, which will begin next week.<br>
+#### Week 2 Assignment
+Form a team of not more than 5 people for the class term project, which will begin next week.<br>
 
 ### Week 1
 A "mini-project" as overview of what you will do during your own software project for this course.
@@ -46,11 +53,11 @@ The activities to perform are:
 
 * Create a Github project for your team.
 * In the project, write a README.md listing your team members.
-* Write a short Vision using the Vision template.  Vision should include:
+* Write a short _Vision Statement_.  Vision should include:
 ** Background - what is the context? what is the problem?
 ** Who are the customer and stakeholders?  How does the problem affect them?
 ** Why is this project worth undertaking?  (Aside from the fact that its required for this course.)
 ** Your VISION of the solution.  And make it visual.  
 ** How is your solution different from existing products? 
-: Write the Vision in Github or Google Docs. Put a '''link''' to it in your README.md.
-: If you use Google Docs be sure to ''share'' it.
+** Write the Vision in Github or Google Docs. Put a '''link''' to it in your README.md.
+**If you use Google Docs be sure to ''share'' it.
