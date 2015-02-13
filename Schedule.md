@@ -17,6 +17,7 @@ Meet the customer!
 
 #### Week 3 Assignment
 Each team should create a project on Github. On this site create:
+
 1. _Vision Statement_ including Mock-up of the UI.  _Mock-up_ is not just some wishful sketch: it must show how the application will be used (screen-by-screen) and how it fulfills the customer's primary use case requirements.
 2. _Glossary_ file containing terms you learned from the customer, plus any significant terms you learn from your own research.
 3. _Informal Use Cases_ short descriptions of customer's requirements.  Number them UC1, UC2, etc.
@@ -54,10 +55,10 @@ The activities to perform are:
 * Create a Github project for your team.
 * In the project, write a README.md listing your team members.
 * Write a short _Vision Statement_.  Vision should include:
-** Background - what is the context? what is the problem?
-** Who are the customer and stakeholders?  How does the problem affect them?
-** Why is this project worth undertaking?  (Aside from the fact that its required for this course.)
-** Your VISION of the solution.  And make it visual.  
-** How is your solution different from existing products? 
-** Write the Vision in Github or Google Docs. Put a '''link''' to it in your README.md.
-**If you use Google Docs be sure to ''share'' it.
+  * Background - what is the context? what is the problem?
+  * Who are the customer and stakeholders?  How does the problem affect them?
+  * Why is this project worth undertaking?  (Aside from the fact that its required for this course.)
+  * Your VISION of the solution.  And make it visual.  
+  * How is your solution different from existing products? 
+  * Write the Vision in Github or Google Docs. Put a '''link''' to it in your README.md.
+  * If you use Google Docs be sure to ''share'' it.
