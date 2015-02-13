@@ -5,6 +5,8 @@ By the end of EL1 you must have a running, deployable application.  You must als
 
 During EL1, we'll study some useful technology.  I hope to cover Unit Testing, Logging, Persistence, and a few design patterns.  We will introduce and require teams to use _Issue Tracking_ using Github and Waffle.io, and Git _branches_ for development. 
 
+---
+
 ### Week 5 Lab
 Lots to do this week:
 
@@ -18,6 +20,8 @@ Lots to do this week:
 #### Week 5 Assignment
 * Create Iteration Plan for EL1 using template. Put it on your Wiki and link to your project README file.
 
+---
+
 ### Week 4 Lab
 UML Sequence Diagram practice (reschedule from week3)<br>
 Review of Requirements and Use Cases<br>
@@ -28,6 +32,8 @@ Domain Modeling
 2. Create a domain model.  You should have at least one domain class diagram and one or more sequence diagrams.  These may be sketches (don't have to be beautiful).
 3. Add terms to your Glossary that explain important concept classes in domain model. For example, if you have a class named "Registrar" then explain what it is! 
 4. Be prepared to explain your Domain Model in lab next week!  2-3 teams will be selected to present.
+
+---
 
 ### Week 3 Lab
 Quiz on git<br>
@@ -43,12 +49,16 @@ Each team should create a project on Github. On this site create:
 5 _Comparison of Java Web Frameworks_: Select some frameworks, use them to create a project, and write a summary of your findings.  See: http://goo.gl/9erztx  
 __Due__: Tuesday, 10 Feb, on Github.
 
+---
+
 ### Week 2 Lab
 UML Practice  
 Git practice (game)
 
 #### Week 2 Assignment
 Form a team of 3-5 people for the class term project, which will begin next week.
+
+---
 
 ### Week 1
 A "mini-project" as overview of what you will do during your own software project for this course.
