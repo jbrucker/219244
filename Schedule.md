@@ -1,4 +1,22 @@
-lso check the Wiki of the [https://github.com/SSD2015 SSD2105] organization on Github.
+### Roadmap for Next Four Weeks
+We are starting Elaboration Iteration 1.  You must identify main featurements in implement and select those to implement in EL1. To keep all teams on track, TAs and I will choose a common set of features we want all projects to implement.
+
+By the end of EL1 you must have a running, deployable application.  You must also have good documentation, including refined, nearly complete set of requirements (as UC and Supplemental Requirements), and some design documentation, which we will bundle into a _Software Architecture Document_.  The SAD is for developers, so it isn't as rigorous as the SRS, but it must be accurate and complete.  You should record important design decisions here.  Your Web Frameworks review can be included, too.
+
+During EL1, we'll study some useful technology.  I hope to cover Unit Testing, Logging, Persistence, and a few design patterns.
+
+### Week 5 Lab
+Lots to do this week:
+
+1. Review and discussion of your domain models. I will choose a few teams to present, so be prepared.
+  * You should be able to relate your domain model to your Use Cases and Mock-up.  They should be consistent.
+2. Introduction to Play! framework.  I haven't decided whether _everyone_ must use this framework, but Play! got the best reviews in your Web Frameworks review assignment, so lets explore it more.
+3. Practice System Sequence Diagrams.
+4. Introduction to Design Patterns (if time permits).
+5. Overview of Elaboration Iteration 1 (EL1) and Iteration Plan for EL1.
+
+#### Week 5 Assignment
+* Create Iteration Plan for EL1 using template. Put it on your wiki or in Google Docs, and link to project README file.
 
 ### Week 4 Lab
 UML Sequence Diagram practice (reschedule from week3)<br>
@@ -30,7 +48,7 @@ UML Practice
 Git practice (game)
 
 #### Week 2 Assignment
-Form a team of not more than 5 people for the class term project, which will begin next week.<br>
+Form a team of 3-5 people for the class term project, which will begin next week.
 
 ### Week 1
 A "mini-project" as overview of what you will do during your own software project for this course.
