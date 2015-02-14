@@ -5,5 +5,5 @@
 
 ## Links to class materials
 
-[Wiki on Github]( https://github.com/SSD2015/219244/wiki): https://github.com/SSD2015/_/wiki  
-[Weekly Lab Materials](http://se.cpe.ku.ac.th/219244) at http://se.cpe.ku.ac.th/219244  
+[Wiki on Github](https://github.com/SSD2015/219244/wiki): https://github.com/SSD2015/219244/wiki  
+**Weekly Lab Materials** are right here. Just clone it. Formerly at at http://se.cpe.ku.ac.th/219244  
