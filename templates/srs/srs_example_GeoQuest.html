@@ -1,0 +1,773 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Software Requirements Specification</title>
+</head>
+
+<body>
+
+<h1 align="center">Software Requirements Specification (SRS)</h1>
+<h3 align="center">Version 1.2<br>
+November 30, 2000</h3>
+<h2 align="center">GeoQuest v2.0</h2>
+<!-- does not apply to this document <H2>Product Name</H2>-->
+<!-- does not apply to this document <H3>Revision Number for this product</H3><BR>-->
+<h2 align="center">Team 09-5<br>
+GeoWizards</h2>
+<h3 align="center">Salem Hussain<br>
+Carina Chowdhury<br>
+Eddie Chen<br>
+Henry Tang<br>
+Mohammad Rahman</h3>
+<hr>
+<h3><a name="TOC"></a>Table of Contents</h3>
+1.0 <a href="#1.0">Introduction</a>
+<blockquote>
+  1.1 <a href="#1.1">Purpose of this Document<br>
+  </a>1.2 <a href="#1.2">Scope of the Development Project</a><br>
+  1.3 <a href="#1.3">Definitions, Acronyms, and Abbreviations</a><br>
+  1.4 <a href="#1.4">References</a><br>
+  1.5 <a href="#1.5">Overview of Document</a>
+</blockquote>
+2.0 <a href="#2.0">General Description</a>
+<blockquote>
+  2.1 <a href="#2.1">User Personas and Characteristics</a><br>
+  2.2 <a href="#2.2">Product Perspective</a><br>
+  2.3 <a href="#2.3">Overview of Functional Requirements</a><br>
+  2.4 <a href="#2.4">Overview of Data Requirements</a><br>
+  2.5 <a href="#2.5">General Constraints, Assumptions, Dependencies, Guidelines<br>
+  </a>2.6 <a href="#2.6">User View of Product Use<br>
+  </a>
+  &nbsp;&nbsp;&nbsp; 2.6.1 <a href="#2.6.1">Jane</a><br>
+  &nbsp;&nbsp;&nbsp; 2.6.2 <a href="#2.6.2">Bob</a><br>
+  &nbsp;&nbsp;&nbsp; 2.6.3 <a href="#2.6.3">Teacher Ami</a>
+</blockquote>
+3.0 <a href="#3.0">Specific Requirements</a>
+<blockquote>
+  3.1 <a href="#3.1">External Interface Requirements</a><br>
+  3.2 <a href="#3.2">Detailed Description of Functional Requirements<br>
+  </a>&nbsp;&nbsp;&nbsp; 3.2.1 <span style="FONT-FAMILY: 'Times New Roman'"><a href="#3.2.1">Template
+  for describing functional requirements<O:P>
+  </a>&nbsp;<br>
+  &nbsp;&nbsp;&nbsp; </span>3.2.2 <span style="FONT-FAMILY: 'Times New Roman'"><a href="#3.2.2">Main
+  Page</a>&nbsp;<br>
+  &nbsp;&nbsp;&nbsp; </span>3.2.3 <span style="FONT-FAMILY: 'Times New Roman'"><a href="#3.2.3">Game
+  Introductory Page<O:P>
+  </a>&nbsp;<br>
+  &nbsp;&nbsp;&nbsp; </span>3.2.4 <a href="#3.2.4"><span style="FONT-FAMILY: Times New Roman">Tutorial
+  Mode</span></a><span style="FONT-FAMILY: 'Times New Roman'"><br>
+  &nbsp;&nbsp;&nbsp; </span>3.2.5 <a href="#3.2.5"><span style="FONT-FAMILY: Times New Roman">Game
+  Mode</span></a><span style="FONT-FAMILY: 'Times New Roman'"><a href="#3.2.1"><O:P>
+  </a>&nbsp;</span><br>
+  3.3 <a href="#3.3">Performance Requirements</a><br>
+  3.4 <a href="#3.4">Quality Attributes</a><br>
+  3.5 <a href="#3.5">Other Requirements</a>
+</blockquote>
+<hr width="100%">
+<h3>&nbsp;<a name="1.0"></a>1.0 Introduction</h3>
+<blockquote>
+  <h3><a name="1.1"></a>1.1 Purpose of this Document</h3>
+  <p>The purpose of this Software Requirements Specification (SRS) document is
+  to give an overview the requirements for the Adventures in Geometry project.&nbsp; The
+  SRS will define how our team and the client envision the final product and the
+  characteristics or functionality it must have. We note&nbsp; interface or
+  implementation requirements as well as product functionality that is desired
+  but not absolutely necessary.</p>
+  <h3><a name="1.2"></a>1.2 Scope of the Development Project</h3>
+  <p>The product will be a web-based application to assist elementary school
+  children (specifically, 6th graders) with concepts of geometry.</p>
+  <h3><a name="1.3"></a>1.3 Definitions, Acronyms, and Abbreviations</h3>
+  <ul>
+    <li><b>BROWSER:</b> A browser is an application program that provides a way
+      to look at and interact with all the information on the World Wide Web.
+      The word &quot;browser&quot; seems to have originated prior to the Web as
+      a generic term for user interfaces that let you browse <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,213125,00.html">text</a>
+      files online. By the time the first Web browser with a <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,213989,00.html">graphical
+      user interface</a> was invented (Mosaic, in 1992), the term seemed to
+      apply to Web content, too. Technically, a Web browser is a client program
+      that uses the Hypertext Transfer Protocol (<a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,214004,00.html">Hypertext
+      Transfer Protocol</a>) to make requests of Web servers throughout the
+      Internet on behalf of the browser user. A commercial version of the
+      original browser, <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212593,00.html">Mosaic</a>,
+      is in use. Many of the user interface features in Mosaic, however, went
+      into the first widely-used browser, <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212640,00.html">Netscape</a>
+      Navigator. Microsoft followed with its <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,214105,00.html">Microsoft
+      Internet Explorer</a>. Today, these two browsers are highly competitive
+      and the only two browsers that the vast majority of Internet users are
+      aware of. Although the online services, such as America Online, Compuserve,
+      and Prodigy, originally had their own browsers, virtually all now offer
+      the Netscape or Microsoft browser. <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212505,00.html">Lynx</a>
+      is a text-only browser for UNIX shell and VMS users. Another recently
+      offered browser is <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212712,00.html">Opera</a>.
+    <li><b>COOKIE:</b> A cookie is information that a <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,213352,00.html">Web
+      site</a> puts on your <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212227,00.html">hard
+      disk</a> so that it can remember something about you at a later time.
+      (More technically, it is information for future use that is stored by the <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212964,00.html">server</a>
+      on the <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,211795,00.html">client</a>
+      side of a <a href="http://www.whatis.com/WhatIs_Search_Results_Exact/clientse.htm">client/server</a>
+      communication.) Typically, a cookie records your preferences when using a
+      particular site. Using the Web's Hypertext Transfer Protocol (<a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,214004,00.html">Hypertext
+      Transfer Protocol</a>), each request for a Web page is independent of all
+      other requests. For this reason, the Web page server has no memory of what
+      pages it has sent to a user previously or anything about your previous
+      visits. A cookie is a mechanism that allows the <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212964,00.html">server</a>
+      to store its own information about a user on the user's own computer. You
+      can view the cookies that have been stored on your hard disk (although the
+      content stored in each cookie may not make much sense to you). The
+      location of the cookies depends on the browser. Internet Explorer stores
+      each cookie as a separate file under a Windows subdirectory. Netscape
+      stores all cookies in a single cookies.txt fle. <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212712,00.html">Opera</a>
+      stores them in a single cookies.dat file.
+    <li><b>GUI:</b> A GUI (usually pronounced <font size="-1">GOO-ee</font>) is
+      a graphical (rather than purely textual) user interface to a computer. As
+      you read this, you are looking at the GUI or graphical user interface of
+      your particular Web <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,211708,00.html">browser</a>.
+      The term came into existence because the first interactive user interfaces
+      to computers were not graphical; they were text-and-keyboard oriented and
+      usually consisted of commands you had to remember and computer responses
+      that were infamously brief. The command interface of the <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,213911,00.html">Disk
+      Operating System</a> operating system (which you can still get to from
+      your Windows operating system) is an example of the typical user-computer
+      interface before GUIs arrived. An intermediate step in user interfaces
+      between the command line interface and the GUI was the non-graphical <i>menu-based
+      interface</i>, which let you interact by using a <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212596,00.html">mouse</a>
+      rather than by having to type in keyboard commands.
+    <li><b>HTML: </b>HTML (Hypertext Markup Language) is the set of &quot;<a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212527,00.html">markup</a>&quot;
+      symbols or codes inserted in a file intended for display on a World Wide
+      Web <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,211708,00.html">browser</a>.
+      The markup tells the Web browser how to display a Web page's words and
+      images for the user. The individual markup codes are referred to as
+      elements (but many people also refer to them as <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,213087,00.html">tag</a>).
+    <li><b>JAVASCRIPT:</b> JavaScript is an <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212373,00.html">interpreted</a>
+      programming or <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,212948,00.html">script</a>
+      language from Netscape. It is somewhat similar in capability to
+      Microsoft's <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,213309,00.html">Visual
+      Basic</a>, Sun's <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,214196,00.html">Tool
+      Command Language</a>, the UNIX-derived <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,214291,00.html">Practical
+      Extraction and Reporting Language</a>, and IBM's <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,214262,00.html">Restructured
+      Extended Executor</a>. In general, script languages are easier and faster
+      to code in than the more structured and <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,211824,00.html">compiler</a>
+      languages such as <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,211723,00.html">C</a>
+      and <a class="inline" href="http://www.whatis.com/WhatIs_Definition_Page/0,4152,211850,00.html">C++</a>.
+      Script languages generally take longer to process than compiled languages,
+      but are very useful for shorter programs.</li>
+  </ul>
+  <h3><a name="1.4"></a>1.4 References</h3>
+  <p><i><b>Online Reference and Printed Materials</b></i></p>
+  <ul>
+    <li><a href="http://www.whatis.com">http://www.whatis.com/</a> - Definitions
+      for thousands of the most current IT-related words.
+    <li><a href="http://java.sun.com/j2se/1.3/docs/api/index.html">http://java.sun.com/j2se/1.3/docs/api/index.html</a>
+      - API specification for the Java 2 Platform
+    <li><a href="http://www.eckelobjects.com/javabook.html">http://www.eckelobjects.com/javabook.html</a>
+      - Thinking in Java
+    <li>Elizabeth Castro, Peachpit Press, Copyright by Elizabeth Castro, 1998, <i>HTML
+      4 For the World Wide Web, Visual Quickstart Guide</i>.
+    <li>David Flanagan, O'Reilly &amp; Associates, Inc. Copyright by David
+      Flanagan, 1997, <i>JavaScript - The Definitive Guide</i>.&nbsp;
+    <li>Kent Cearley, Waite Group Press, Copyright by TheWaite Group, Inc.,
+      1998, <i>HTML4 Interactive Course</i>.
+    <li>Tom Negrino &amp; Dori Smith, Peachpit Press, Copyright by Tom Negrino&nbsp;&amp;
+      Dori Smith, 1999, <i>JavaScript For the World Wide Web, Visual Quickstart
+      Guide</i>.</li>
+  </ul>
+  <i><b>Additional References</b></i>
+  <ul>
+    <li><a href="mailto:%20almstrum@cs.utexas.edu">Dr. Vicki L. Almstrum</a>,
+      CS373 Software Engineering Instructor
+    <li><a href="mailto:%20myers@cs.utexas.edu">Dr. Margaret Myers</a>, Dana
+      Center
+    <li><a href="mailto:%20ratliff@polaris.net">Emily Ratliff</a>, Tivoli
+      Systems Inc. Senior Software Engineer (Mentor) </li>
+  </ul>
+  <h3><a name="1.5"></a>1.5 Overview of Document</h3>
+  <p>This document describes the software requirements for the Adventures in
+  Geometry Project.&nbsp;</p>
+  <p>Section 2 represents a&nbsp; potential group of end-users for our product.
+  This section includes examples of typical users for our product. It also lists
+  the constraints, assumptions, dependencies and guidelines for our product.</p>
+  Section 3 is a detailed description of the functional and technical
+  requirements of the product.
+  <p>&nbsp;</p>
+</blockquote>
+<p><font size="2"><a href="#TOC">Return to TOC</a></font></p>
+<hr>
+<h3><a name="2.0"></a>2.0 General Description</h3>
+<blockquote>
+  <h3><a name="2.1"></a>2.1 User Personas and Characteristics</h3>
+  <p class="MsoNormal"><span style="mso-bidi-font-weight: bold">Jane, a
+  13-year-old female with no computer knowledge<br>
+  </span>
+  Jane is a 13-year-old female in the 8<sup>th</sup> grade.<span style="mso-spacerun: yes">&nbsp;
+  </span>She has never owned or operated a computer in her life.<span style="mso-spacerun: yes">&nbsp;
+  </span>Jane is not very bright with geometry and wants to learn it.<span style="mso-spacerun: yes">&nbsp;
+  </span>She is looking forward to improving her geometry skills through any
+  tool provided to her.<span style="mso-spacerun: yes">&nbsp; She needs extra
+  help with geometry. </span>She is also
+  willing to learn how to operate a computer.<br>
+  <br>
+  <span style="mso-bidi-font-weight: bold">
+  Bob, an 11-year-old male computer power-user<br>
+  </span>Bob is an 11-year-old computer guru. He is a hacker wannabe and a very
+  intelligent boy who is very good with geometry.<span style="mso-spacerun: yes">&nbsp;
+  </span>His parents bought him a computer when Bob was six years old, and he
+  has been operating the computer since then.<span style="mso-spacerun: yes">&nbsp;
+  </span>Bob spends more than 10 hours per day on the computer. Perhaps as a
+  result, he has developed color-blindness and has developed vision problem with
+  small objects.<br>
+  <br>
+  <span style="mso-bidi-font-weight: bold">
+  Teacher Ami, a sixth-grade teacher who is relatively competent in the use of
+  computers</span>
+  <br>Ami used to be an art teacher and now she is an elementary and junior high
+  school teacher.<span style="mso-spacerun: yes">&nbsp; </span>She is very good
+  with drawing and loves to judge people’s artwork.<span style="mso-spacerun: yes">&nbsp;
+  </span>Ami owns a computer and has the skill to operate a computer without
+  difficulty.&nbsp; She knows how to install software on a computer.&nbsp;&nbsp;
+  She has extensive knowledge about the Internet.</O:P>
+  </p>
+  <h3><a name="2.2"></a>2.2 Product Perspective</h3>
+  <ul>
+    <li>This project is an extension to the GeoQuest of Fall, 98. It is a
+      web-based application.
+    <li>Application will interact with a text reader to assist users who have
+      visual disabilities
+    <li>It consists of a graphical user interface written in Java, JavaScript,
+      HTML, or a combination of these.
+    <li>
+      <p>The product is web accessible and must work with the client's existing
+      hardware. A web browser like Netscape 4.0+ or Internet Explorer 4.0+ will
+      be needed.</p>
+    <li>
+      <p>Requires sound card and appropriate audio equipment.</p>
+    <li>
+      <p>Computers will need Internet access with a connection speed of at least
+      28.8 for decent download of information like pictures and sound. Our
+      product can run locally if all the source files are on the local machine.</p>
+    </li>
+  </ul>
+  <h3><a name="2.3"></a>2.3 Overview of Functional Requirements</h3>
+  <ul>
+    <li>
+      <p class="MsoNormal">A product main page will present the objective of the
+      game and state requirements for running the game. It will also include a
+      link to start the program.<O:P>
+      </O:P>
+      </p>
+    <li>
+      <p class="MsoNormal">An introductory page will introduce the setting of
+      the game and state the mission of the apprentices. This page will allow
+      users to choose between adventure mode and tutorial mode.<O:P>
+      </O:P>
+      </p>
+    <li>
+      <p class="MsoNormal">The tutorial mode will offer lessons and practice
+      problems similar to those asked in the game mode.</p>
+    <li>
+      <p class="MsoNormal">During the game mode, the users will be asked a
+      series of geometry questions. If the questions are answered correctly, the
+      user will be allowed to proceed. Once the users answer three questions
+      incorrectly, the game is over.<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+    <li>
+      <p class="MsoNormal">The questions in the game mode will be different each
+      time a new game is started.</p>
+    </li>
+  </ul>
+  <h3><a name="2.4"></a>2.4 Overview of Data Requirements</h3>
+  <p class="MsoNormal">A user sends inputs to the software program by either
+  typing keys or clicking on the mouse. The user will have an option to choose
+  either the tutorial mode or to start the game by clicking on the appropriate
+  icon. The user will navigate the tutorial pages by clicking on the mouse
+  button. The quiz questions can be answered by either entering or selecting
+  numbers.<O:P>
+  </O:P>
+  </p>
+  <p class="MsoNormal">In the adventure mode, the user will traverse a series of
+  frames that pose questions requiring input from either a click-able image map,
+  a text/numerical value entered from the keyboard, or a series of
+  multiple-choice options in the form of radio buttons.<span style="mso-spacerun: yes">&nbsp;
+  </span>This input will be recorded and, if correct, the user will be
+  transferred from the current frame to the next frame in the adventure.<span style="mso-spacerun: yes">&nbsp;
+  </span>If incorrect for the third time, the game is over.</p>
+  <p class="MsoNormal">In the knowledge assessment mode, there will be comments
+  for both correct and incorrect answers.<span style="mso-spacerun: yes">&nbsp; </span>For
+  example, when the user answers a question correctly they might get a brief
+  message on their screen, whereas an incorrect answer might give the user two
+  more chances and and then an option to go to the tutorial mode. The
+  student’s score will also be output to the screen as an indicator of his/her
+  performance.<span style="mso-spacerun: yes">&nbsp; </span>Sound will be
+  incorporated as part of our enhancement techniques, which should make the game
+  more interesting to the children.</p>
+  <h3><a name="2.5"></a>2.5 General Constraints, Assumptions, Dependencies,
+  Guidelines</h3>
+  <ul style="MARGIN-TOP: 0in" type="disc">
+    <li class="MsoNormal" style="mso-list: l2 level1 lfo2; tab-stops: list .5in">The
+      product is available at no charge and is intended for educational
+      purposes.
+    <li>
+      <p class="MsoNormal">The product will run on any computer with
+      JavaScript-enabled web browsers such as Internet Explorer version 4.0+, or
+      Netscape Navigator version 4.0+.<O:P>
+      </O:P>
+      </p>
+    <li>
+      <p class="MsoNormal">Ideally, the computer will have Internet connection.
+      However, the product should work without Internet connection if copies of
+      the product are stored in local hard drives.<O:P>
+      </O:P>
+      </p>
+    <li>
+      <p class="MsoNormal">File size will need to be considered with
+      incorporation of sound or music.</p>
+    </li>
+  </ul>
+  <h3><a name="2.6"></a>2.6 User View of Product Use</h3>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><a name="2.6.1"></a>2.6.1
+  Jane<O:P>
+  </O:P>
+  </b></p>
+  <blockquote>
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Setting:<O:P>
+    </O:P>
+    <br>
+    </b><span style="mso-bidi-font-weight: bold">Jane wants to play Adventures
+    in Geometry no matter what the product is like; however, she has no idea how
+    find the game on the web because she scarcely knows what the Web or
+    a browser is.<span style="mso-spacerun: yes">&nbsp; </span>Jane received&nbsp;
+    good instructions on how to access the game through the Web from the
+    product's help menu.<O:P>
+    </O:P>
+    </span></p>
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal">User View:<br>
+    </b><span style="mso-bidi-font-weight: bold">Jane was able to follow the
+    directions and access the game on the Internet.<span style="mso-spacerun: yes">&nbsp;
+    </span>In the game, the screen gives instructions on how the game works and
+    also provides her with a tutorial section. She is well informed through the
+    instructions and tutorial section to play the game.</span></p>
+  </blockquote>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><a name="2.6.2"></a>2.6.2
+  Bob<O:P>
+  </O:P>
+  </b></p>
+  <blockquote>
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Setting:<O:P>
+    </O:P>
+    <br>
+    </b><span style="mso-bidi-font-weight: bold">Bob has no problem accessing
+    the game.<span style="mso-spacerun: yes">&nbsp; </span>He has the knowledge
+    to operate the game.<span style="mso-spacerun: yes">&nbsp;He does not have
+    any prior knowledge on geometry, but he has keen interest to learn the
+    concept of geometry. </span></O:P>
+    </span></p>
+    <p><b style="mso-bidi-font-weight: normal">User View:<br>
+    </b><span style="mso-spacerun: yes">He finds the tutorial page very helpful
+    to identify the different shapes of&nbsp; geometry. The game helps him
+    understand the basic concepts and formula of geometry.</span></p>
+  </blockquote>
+  <p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><a name="2.6.3"></a>2.6.3
+  Teacher Ami<O:P>
+  </O:P>
+  </b></p>
+  <blockquote>
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal">Setting:<O:P>
+    </O:P>
+    <br>
+    </b><span style="mso-bidi-font-weight: bold">Ami has no problem accessing
+    the game on the web.<span style="mso-spacerun: yes">&nbsp; </span>She has
+    the knowledge to operate the game.<span style="mso-spacerun: yes">&nbsp; </span>The
+    artwork impresses her. And she now thinks that this game will be a very
+    nifty way to teach her sixth graders the concept of geometry.</span></p>
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal">User View:<br>
+    </b><span style="mso-bidi-font-weight: bold">Ami becomes amused with the
+    artworks and wants to venture through the game in order to see more great
+    artworks despite the fact she has no need to learn geometry.<span style="mso-spacerun: yes">&nbsp;
+    </span>When she hears the sound effects of the game, she was even more
+    excited than before.</span><b style="mso-bidi-font-weight: normal"> <O:P>
+    </O:P>
+    </b></p>
+  </blockquote>
+</blockquote>
+<p><font size="2"><a href="#TOC">Return to TOC</a></font></p>
+<hr>
+<h3><a name="3.0"></a>3.0 Specific Requirements</h3>
+<blockquote>
+  <h3><a name="3.1"></a>3.1 External Interface Requirements</h3>
+  <ul type="disc">
+    <li class="MsoNormal" style="mso-list: l0 level1 lfo4; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>User
+      Interface: </b>At the start of the game the user will be asked to login
+      his/her name. After logging in the user will be given the option of going
+      into the tutorial mode or starting the game. There will be two buttons:
+      Tutorial Mode and Start Game.
+      <p class="MsoBodyTextIndent">The game page will have two or three frames
+      (one for picture, one for text directions, and another for menu options).
+      Our user interface is designed to be primarily mouse driven in order to
+      facilitate ease of use. The mouse will be used to allow the user to
+      navigate through out the game and to select answers to questions. There
+      are some questions where the answers have to be typed in.</p>
+    <li class="MsoNormal" style="mso-list: l0 level1 lfo4; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>Hardware
+      Components:</b> The game will be able to run if the computer is at least a
+      PowerPC Macintosh or a Pentium-class PC, 32 MB of RAM, and has a color
+      display.<br>
+    <li class="MsoNormal" style="mso-list: l0 level1 lfo4; tab-stops: list .5in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><b>Software
+      Components:</b> A web browser, either Internet Explorer 4.0+ or Netscape
+      4.0+, will be necessary. To hear the sound the user would need to have the
+      proper plug-in for the browser, but this is not a requirement. If the user
+      does not have the plug-in, he/she will not hear the sound but will still
+      be able to play the game. The program has no other software requirements.&nbsp;</li>
+  </ul>
+  <h3><a name="3.2"></a>3.2 Detailed Description of Functional Requirements</h3>
+  <h5 style="TEXT-INDENT: 0.5in"><span style="FONT-FAMILY: 'Times New Roman'"><a name="3.2.1"></a>3.2.1
+  Template for describing functional requirements<O:P>
+  </O:P>
+  </span></h5>
+  <table style="MARGIN-LEFT: 1in; WIDTH: 80%; mso-cellspacing: 1.5pt; mso-padding-alt: 0in 0in 0in 0in" cellPadding="0" width="80%" border="1">
+    <tbody>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>purpose</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal">a description of the functional requirement and
+          its reason(s)<span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>input</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal">which inputs; in what form/format will inputs
+          arrive; from what sources input will be derived, legal domains of each
+          input element<span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>processing</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal">describes the <i>outcome</i> rather than the <i>implementation</i>;
+          include any validity checks on the data, exact timing of each
+          operation (if needed), how to handle unexpected or abnormal situations<span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>output</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal">the form, shape, destination, and volume of the
+          output; output timing; range of parameters in the output; unit measure
+          of the output; process by which the output is stored or destroyed;
+          process for handling error messages produced as output<span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 style="TEXT-INDENT: 0.5in"><span style="FONT-FAMILY: 'Times New Roman'"><a name="3.2.2"></a>3.2.2
+  Main Page<O:P>
+  </O:P>
+  </span></h5>
+  <table style="MARGIN-LEFT: 1in; WIDTH: 80%; mso-cellspacing: 1.5pt; mso-padding-alt: 0in 0in 0in 0in" cellPadding="0" width="80%" border="1">
+    <tbody>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>purpose</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Presents
+          the objective of the game and other requirements and an login option.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>input</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Input
+          will be mouse driven.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>processing</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Begins
+          the introduction of the game.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>output</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Takes
+          the users to the introductory page of the game where options are given
+          to start the game, go to the tutorial mode, or exit the program.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 style="TEXT-INDENT: 0.5in"><span style="FONT-FAMILY: 'Times New Roman'"><span style="mso-spacerun: yes">&nbsp;<a name="3.2.3"></a></span>3.2.3
+  Game Introductory Page<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><O:P>
+  </O:P>
+  </span></h5>
+  <table style="MARGIN-LEFT: 1in; WIDTH: 80%; mso-cellspacing: 1.5pt; mso-padding-alt: 0in 0in 0in 0in" cellPadding="0" width="80%" border="1">
+    <tbody>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>purpose</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">State
+          settings of the game and the mission of the apprentices.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>input</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Input
+          will be mouse driven.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>processing</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Begins
+          the game, tutorial mode, or exit the program.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>output</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Either
+          takes the user to the game page, the tutorial page, or exit the game.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 style="TEXT-INDENT: 0.5in"><span style="FONT-FAMILY: 'Times New Roman'"><a name="3.2.4"></a>3.2.4
+  Tutorial Mode<O:P>
+  </O:P>
+  </span></h5>
+  <table style="MARGIN-LEFT: 1in; WIDTH: 80%; mso-cellspacing: 1.5pt; mso-padding-alt: 0in 0in 0in 0in" cellPadding="0" width="80%" border="1">
+    <tbody>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>purpose</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Offer
+          lessons and practice problems.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>input</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Input
+          will be mouse driven.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>processing</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Begins
+          the game after the user is sure he/she wants to move on to the game
+          phase.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>output</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: Arial Unicode MS">Three
+          alternatives: </span><span style="mso-fareast-font-family: 'Arial Unicode MS'">takes
+          the user to the game page; goes back to the tutorial mode for more
+          practice; quits the application.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 style="TEXT-INDENT: 0.5in"><span style="FONT-FAMILY: 'Times New Roman'"><a name="3.2.5"></a>3.2.5
+  Game Mode<O:P>
+  </O:P>
+  </span></h5>
+  <table style="MARGIN-LEFT: 1in; WIDTH: 80%; mso-cellspacing: 1.5pt; mso-padding-alt: 0in 0in 0in 0in" cellPadding="0" width="80%" border="1">
+    <tbody>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>purpose</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Solve
+          the geometric puzzle and move forward.<O:P>
+          </O:P>
+          The goal is to escape from the castle by answering all the questions.</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>input</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Input
+          will be keyboard mouse driven.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>processing</b><span style="mso-fareast-font-family: 'Arial Unicode MS'"><O:P>
+          </O:P>
+          </span></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Three
+          incorrect answers would give option to the user either to go into the
+          tutorial mode or exit the game. A correct answer takes the user to the
+          next screen and towards achieving his/her goal.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 24.68%; PADDING-TOP: 0in" width="24%">
+          <p class="MsoNormal"><b>output</b></p>
+        </td>
+        <td style="PADDING-RIGHT: 0in; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; WIDTH: 74.04%; PADDING-TOP: 0in" width="74%">
+          <p class="MsoNormal"><span style="mso-fareast-font-family: 'Arial Unicode MS'">Either
+          an option to start over the game, which will lead to the beginning of
+          the game mode or to exit the game.<O:P>
+          </O:P>
+          </span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3><a name="3.3"></a>3.3 Performance Requirements</h3>
+  <ul style="MARGIN-TOP: 0in" type="disc">
+    <li class="MsoNormal" style="mso-list: l3 level1 lfo1; tab-stops: list .5in">The
+      user will run the product from the s2s web site hosted by The University
+      of Texas at Austin's Computer Science Department. The number of
+      connections to the system depends on the UT CS department web server
+      configuration and capability. However, the user will be able to run the
+      program locally by installing all the source files on his hard drive or on
+      a CD.
+    <li class="MsoNormal" style="mso-list: l3 level1 lfo1; tab-stops: list .5in">GeoQuest
+      is a web-based stand-alone application. Multiple users should be able to
+      run the software simultaneously as long as the number of connections to
+      the web server does not exceed the configuration limit. However, the more
+      the number of users on the system, the less performance every user
+      experiences while using the product.
+    <li class="MsoNormal" style="mso-list: l3 level1 lfo1; tab-stops: list .5in">GeoQuest
+      will load up graphics and sounds on every page and will also open up
+      windows using JavaScript on the runtime. The response time for loading
+      every page depends mostly on the Internet connection speed and also data
+      transmission bandwidth. The response time may be longer when used with a
+      slow connection. For this reason, future enhancement of the product should
+      avoid incorporating unnecessary graphics and sound files on the HTML page.
+    <li class="MsoNormal" style="mso-list: l3 level1 lfo1; tab-stops: list .5in">Response
+      time of interactive transaction should not exceed 2 seconds per
+      transaction. However, it may vary depending on the client’s system
+      configuration.</li>
+  </ul>
+  <h3><a name="3.4"></a>3.4 Quality Attributes</h3>
+  <ul style="MARGIN-TOP: 0in" type="disc">
+    <li class="MsoNormal" style="mso-list: l2 level1 lfo2; tab-stops: list .5in">The
+      availability of the product solely depends on the availability of the web
+      server of UT CS department. Generally speaking, the product should be
+      available 24 hours a day, 365 days a year.
+    <li class="MsoNormal" style="mso-list: l2 level1 lfo2; tab-stops: list .5in">GeoQuest
+      should be a very reliable product since it does not require interaction
+      with the local system it is running on. For an example, the software does
+      not open up any external files on the local system. The product is
+      expected to run smoothly without crashing the browser or the system.
+    <li class="MsoNormal" style="mso-list: l2 level1 lfo2; tab-stops: list .5in">The
+      product is maintained by good documentation of code and instructions for
+      end users.</li>
+  </ul>
+  <h3><a name="3.5"></a>3.5 Other requirements</h3>
+  <p>None at this time</p>
+</blockquote>
+<p><font size="2"><a href="#TOC">Return to TOC</a></font></p>
+<hr>
+<font size="-1" color="#000000">Change log for the Software Requirements
+Specification Document:</font>
+<ul>
+  <li><font color="#000000" size="-1">November 30th, 2000: Submission of version
+    1.2.</font></li>
+  <li><font size="2">October 24, 2000:&nbsp; Submission of version 1.1.&nbsp;</font>
+  <li><font color="#000000" size="-1">October 11, 2000:&nbsp; Initial submission
+    to CEO and VPs of S2S Project</font></li>
+</ul>
+
+</body>
+
+</html>
