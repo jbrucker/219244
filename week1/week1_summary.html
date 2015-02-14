@@ -1,0 +1,312 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+ <head>
+  <title>Summary</title>
+  <meta name="generator" content="editplus">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+ </head>
+
+ <body>
+ <h1>Summary of Week 1</h1>
+
+ <hr>
+
+<h2>1. Goal Of Software Engineerings</h2>
+<ol>
+  <li>As software engineers, what are our goals? </li>
+  <li>Typically: 
+    <ol>
+      <li>Design and develop useful software that helps the customer. </li>
+      <li>Create good quality software that is maintainable.</li>
+      <li>Make a profit doing this. </li>
+    </ol>
+  </li>
+</ol>
+
+<h2>2. Why Software Development is Difficult</h2>
+<ol>
+  <li>Complexity: Useful software is complex. 
+      <br>We can't keep the entire project in mind at once.
+	  <br>For complex projects, no one has a complete understanding of the system.
+	  Fred Brooks called this <em>intrinsic complexity</em> in a
+	  famous article "No Silver Bullet".
+	  <p>
+	  Miller's Law: a person can concentrate on at most 7 +/- 2 things at once.
+	  </p>
+
+  <li>Change.
+      Requirements change, our understanding changes, technology changes,
+	  the "business environment" changes.
+  <li>The customer or intended user(s) of the software cannot envision
+      and describe what they really want until they see a solution.
+</ol>
+<p>
+Larman: Software development is more like "new product development" than
+manufacturing.  Hence, manufacturing processes and management
+methods aren't suitable.
+</p>
+
+<h3>Sources of Complexity</h3>
+<p>
+Complexity can be <em>intrinsic</em> or <em>accidental</em>.
+Intrinsic complexity comes from the nature of the problem or requirements,
+and is unavoidable.
+<p>
+Accidental complexity is that which could be avoided, 
+such as using a simpler or more suitable model, 
+  more suitable programming language, or better framework.
+  Some authors say that Java is adding accidental complexity.
+</p>
+
+<h2>2. Software Project</h2>
+
+<p>
+A software project has the goal of developing software (obviously).
+A "project" occurs for a limited time -- its not an ongoing activity
+of an organization.
+<p>
+A project involves:
+<dl>
+<dt>People
+<dd>
+including the client, users, developers, managers, and others affected
+by the outcome of the project, collectively call <em>stakeholders</em>.
+The Client, customers, and users may be different!
+</dd>
+<dt>Product
+<dd>
+the thing we will product.  At first, it may not be clear what this is!
+</dd>
+<dt>Project
+<dd>
+the effort and resources with the goal of creating the product.
+A Project must be planned and managed.
+How to plan and manage software projects for success is a course
+in itself.  We won't study it in this course;
+if you're interested see Steve McConnell's books (has 2 on the subject).
+</dd>
+<dt>Process
+<dd>
+<em>What</em> and <em>how</em> we go about developing software and 
+performing the project.
+</dd>
+</dl>
+
+<p>
+Projects can be broadly divided into 4 groups, 
+depending on the requirements and life cycle:  
+<table align="center" border="1">
+  <tr>
+	<th>New or existing?<th>
+	<th colspan="2">Requirements are specified:</th>
+  </tr>
+  <tr valign="top">
+	<td>&nbsp;<td>
+	<td>externally<br>(client)</td>
+	<td>internally</td>
+  </tr>
+  <tr valign="top">
+	<td><em>New Software</em></td>
+	<td> (1) </td> 
+	<td><em>(2) Green field project</em></td>
+  </tr>
+  <tr>
+	<td><em>Modify/enhance<br> existing software</em></td>
+	<td> (3) </td> 
+	<td> (4) </td>
+  </tr>
+</table>
+<p>
+Most developers prefer to work on a <em>green field project</em>,
+but in reality most projects are in group (3).
+Further, most revenue (money) comes from (1) and (3).
+(3) and (4) are sometimes <em>reengineering projects</em>.
+</p>
+
+
+<!-- ---------------> 
+
+<h2>3. Software Development Process and Lifecycle Models</h2>
+
+<p>
+A software process is a way of developing software.
+You have a software process even if you aren't aware of it.
+</p>
+<p>
+A defined software process enables planning and estimation.
+It can also make team more efficient by avoiding time wasted
+deciding what to do next and back-tracking to do forgotten tasks.
+
+<h3>Goal: produce software</h3>
+
+<h3>People, Technology, and Methods</h3>
+
+<p>People have <b>roles</b> such as Requirements Analyst, Architect, Developer.
+</p>
+
+<p>Project work is broken down into <b>activities</b>. </p>
+
+<p>Activities are broken down into <b>tasks</b>. </p>
+
+<p>Tasks are assigned to people based on their <b>roles</b>. </p>
+
+<p>Tasks have inputs and outputs known as <b>work products</b> or
+<b>artifacts</b>. </p>
+
+<p>People use <b>technology</b> and <b>tools</b> to accomplish tasks. </p>
+
+<p>People use <b>methods</b> at different levels to guide their work and the
+project. </p>
+
+<p>A <b>process</b> describes how people, technology, and tools should be
+applied to complete the project. </p>
+
+<p>A <b>life cycle model</b> describes the sequence of activities to complate a
+project. The model can describe how activities are divided into tasks, how
+tasks are assigned, and the inputs/outputs. </p>
+
+<p><em>Reference:</em>
+Search web for the "4 P of software project".
+One concise summary is <a href="http://www.jkinfolist.com">jkinfolist.com</a>.
+</p>
+
+
+
+<ul>
+  <li>The purpose of software process.
+  <li>Defined versus implicit process.
+  <li>Process may be repeatable or <em>ad hoc</em>.
+  <li>Some reasons for a defined process:
+	 <ol>
+	 <li>Enables planning.
+	 <li>Predictable to some extent. 
+     You must know <em>what</em> you're going to do before you can
+	 estimate how long it will take.
+	 <li>Avoid wasting time deciding what to do.
+	 <li>Identifies roles, tasks, and work products so you don't omit them.
+	 <li>Promotes efficient teams.
+	 </ol>
+  </li>
+  <li>The purpose of project management.
+  <li>Phases of a software development project.
+  <li>Process Model: Phases, activites, tasks, roles, and work products.
+  </li>
+  <li>Software <em>Development</em> Life cycle models.
+    <ul>
+	<li>Waterfall.
+	<li>Iterative.
+	<li>UP.
+	<li>Agile.
+	</ul>
+  </li>
+  <li>Disadvantages of a linear model (waterfall).
+  </li>
+  <li>Iterative and evolutionary life cycle.
+  </li>
+  <li>The use of tools and technology.
+  </li>
+</ul>
+
+<dl>
+<dt><em>Waterfall Process</em></dt>
+<dd>
+the first well-documented, defined process for software development.
+Its called "waterfall" because you try to go from one phase to the next
+in sequence, like levels on a waterfall. The original phases are:
+<ul>
+<li>system requirements
+<li>software requirements
+<li>analysis
+<li>software design
+<li>coding
+<li>testing
+<li>operations
+</ul>
+However, errors in one phase may be discovered later. This usually requires
+backtracking 2 phases to fix the error.
+<p>
+It is widely criticized today, but a lot of criticism is not fair.
+Read the original 1970 paper by Royce (its short, with many figures).
+Royce recognized many of the problems being criticized and proposed
+ways to mitigate them, including customer feedback and prototyping.
+</dd>
+
+<dt><em>Unified Process</em></dt>
+<dd>
+An iterative software processes, emphasizing 2-dimensional nature of process.  
+Provides a good framework for describing many processes.
+Development is divided into "phases" (time dimension) and the work
+activities are divided into "disciplines", such as "Requirements", "Analysis", etc.
+<p>
+"UP" is short for "Unified Software Development Process" and
+"RUP" is "Rational UP" (Rational was the company name, 
+now it is a division of IBM).
+The OpenUP is an open-source, light-weight version of the UP.
+The OpenUP is described by documents built with the Eclipse Process Framework.
+</p>
+</dd>
+
+<dt><em>Agile versus Disciplined</em></dt>
+<dd>
+Agile processes emphasize interaction between customer and development team,
+adaptability to change in requirements and design,
+and delivering what the customer wants, rather than a lot of project
+documentation that he doesn't want.
+<p>
+Barry Boehm has a book <em>Balancing Agility and Discipline</em> and a
+journal article,
+that provide quantitative evidence of the "success" or effectiveness of
+agile vs. disciplined practices in different project environments.
+He describes 5 factors that serve as guides to deciding how to balance
+the two on a given project.
+</dd>
+<dt><em>
+You can apply agile practices in any existing development process.
+</em>
+<dd>
+Some useful and easy practices to start with are:
+(a) visual task board and burn-down chart,
+(b) daily stand-up meetings,
+(c) demo to customer after each iteration,
+(d) retrospective.
+</dd>
+</dl>
+
+
+<h2>Resources</h2>
+
+<dl>
+<dt><a href="docs/Royce1970-Managing the Development of Large Software Systems.pdf">
+    Royce, Managing the Development of Large Software Systems</a>
+<dd>
+	the original paper about the waterfall process.
+	Its short and shows that Royce was aware of (and sought to reduce)
+	the problems in this development process.
+	He proposed creating a prototype and involving customer at key points
+	during project to minimize risk and the need to repeat steps.
+</dd>
+<dt><em>UML Distilled</em>, Chapter 2
+<dd>describes software processes.
+</dd>
+<dt><a href="http://se.cpe.ku.ac.th/openup">The Open UP</a> 
+<dd>
+	detailed description
+    of the Unified Process components, artifacts, activities, work flows, ...
+	OpenUP was produced by the Eclipse Modeling Framework project.
+</dd>
+<dt><a href="http://www.AgileModeling.com">AgileModeling.com</a>
+<dd>
+many articles about software process, with advise on using agile methods.
+</dd>
+<dt>
+<a href="http://www.augustana.ab.ca/~mohrj/courses/2000.winter/csc220/papers/rup_best_practices/rup_bestpractices.html">
+  RUP Best Practices for Software Development Teams</a>
+</dt>
+<dt>Bruce Ambler, <em>The Object Primer</em> (book).
+<dd>
+Describes Agile methods.  Ambler is also creator of AgileModeling web site.
+</dd>
+</dl>
+
