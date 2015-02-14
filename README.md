@@ -6,6 +6,7 @@
 
 ## Links to Class Materials
 
+| Item | Link |
 | -------------- | -------------------------------------- |
 | __Class Wiki__ | https://github.com/SSD2015/219244/wiki |
 | __Weekly Lab Materials__ | This repository. Just clone it. Formerly at at http://se.cpe.ku.ac.th/219244 |
