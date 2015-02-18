@@ -8,14 +8,13 @@ During EL1, we'll study some useful technology.  I hope to cover Unit Testing, L
 ---
 
 ### Week 5 Lab
-Lots to do this week:
-
 1. Review and discussion of teams' **Domain Models**. I will choose a few teams to present, so be prepared.
   * You should be able to relate your Domain Model to your Use Cases and Mock-up.  They should be consistent.
-2. Introduction to Play! framework.  I haven't decided whether _everyone_ must use this framework, but Play! got the best reviews in your Web Frameworks review assignment, so lets explore it.
+2. (postponed) Introduction to Play! framework. 
 3. Practice drawing System Sequence Diagrams.
-4. Introduction to Design Patterns (if time permits).
+4. Introduction to Design Patterns.
 5. Overview of Elaboration Iteration 1 (EL1), its goals, and writing an Iteration Plan for EL1.
+6. Intro to issue tracking for recording tasks and progress.
 
 #### Week 5 Assignment
 * Create Iteration Plan for EL1 using template. Put it on your Wiki and link to your project README file.
