@@ -17,7 +17,10 @@ During EL1, we'll study some useful technology.  I hope to cover Unit Testing, L
 6. Intro to issue tracking for recording tasks and progress.
 
 #### Week 5 Assignment
+* Meet with team to choose goals, tasks, and milestone(s) for this iteration.
 * Create Iteration Plan for EL1 using template. Put it on your Wiki and link to your project README file.
+* Record backlog and milestones in Github issue tracker.
+* Work on your tasks!
 
 ---
 
