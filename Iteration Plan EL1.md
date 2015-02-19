@@ -8,20 +8,20 @@ Create a deployable web application that implements "Vote for Contestants" use c
 
 ## Milestone(s)
 
-'A Milestone is something that is verifiable and shows definite progress toward completing the project.
-You can have more than one, and one milestone can specify more than one thing to accomplish.'
+_A Milestone is something that is verifiable and shows definite progress toward completing the project.
+You can have more than one, and one milestone can specify more than one thing to accomplish._
 
-| Milestone | Description, Criteria(*), Work Products |
+| Milestone | Description, Evaluation Criteria, Work Products |
 |-----------|-----------------------------------------|
-|  name     | description, the criteris verify this milestone is done, and the work products related to it |
+|  name     | description, the criteria that verify this milestone is done, and the work products related to it |
 
 ## Iteration Objective(s)
 
-'List the objectives you want to accomplish and major tasks needed to meet the objectives.
+_List the objectives you want to accomplish and major tasks needed to meet the objectives.
 During iteration planning and your team meetings you will find additional tasks and more detailed tasks.
 Add the major tasks here.
 All tasks should be created as "Issues" in the online issue tracking system.
-Don't need to write detailed tasks here.'
+Don't need to write detailed tasks here._
 
 | Objective/Feature/Task | Priority (1=very high, 5=low) |
 |------------------------|:-----------------------------:|
