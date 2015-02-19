@@ -1,11 +1,5 @@
 # Iteration Plan for EL1
 
-## Goals and Objectives
-
-_What do you want to accomplish in this iteration?_
-
-Create a deployable web application that implements "Vote for Contestants" use case.
-
 ## Milestone(s)
 
 _A Milestone is something that is verifiable and shows definite progress toward completing the project.
@@ -22,6 +16,9 @@ During iteration planning and your team meetings you will find additional tasks 
 Add the major tasks here.
 All tasks should be created as "Issues" in the online issue tracking system.
 Don't need to write detailed tasks here._
+
+_You can write objectives as a list instead of table._
+
 
 | Objective/Feature/Task | Priority (1=very high, 5=low) |
 |------------------------|:-----------------------------:|
