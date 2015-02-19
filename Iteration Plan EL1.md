@@ -10,6 +10,7 @@ Create a deployable web application that implements "Vote for Contestants" use c
 
 'A Milestone is something that is verifiable and shows definite progress toward completing the project.
 You can have more than one, and one milestone can specify more than one thing to accomplish.'
+
 | Milestone | Description, Criteria(*), Work Products |
 |-----------|-----------------------------------------|
 |  name     | description, the criteris verify this milestone is done, and the work products related to it |
