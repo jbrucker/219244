@@ -1,9 +1,11 @@
-## [Schedule](Schedule.md) of weekly assignments and topics.
-
 ## Feedback and Results
-[Feedback on Vision and Mock-up](https://github.com/SSD2015/219244/wiki/Vision%20Feedback) for 10 Feb assignment.
+- __February 14:__ [Feedback and Guidance on Vsion, Mock-up, Modeling, and Tips + Announcements](https://docs.google.com/document/d/1HRUg6MfWvXEZsRorhN8fWyTB5l98V9Yz6XzOS1n5AmA/edit).
+- __February 11:__ Jim's [Feedback on Vision and Mock-up](https://github.com/SSD2015/219244/wiki/Vision%20Feedback) for Lab 3 assignment.  Please study Thai's guidance (above) and apply it to your docs.
 
-## Links to class materials
+## Links to Class Materials
 
-[Wiki on Github](https://github.com/SSD2015/219244/wiki): https://github.com/SSD2015/219244/wiki  
-**Weekly Lab Materials** are right here. Just clone it. Formerly at at http://se.cpe.ku.ac.th/219244  
+| Item | Link |
+| -------------- | -------------------------------------- |
+| __[Schedule](Schedule.md)__ | Weekly [schedule](Schedule.md) of assignments and topics |
+| __Class Wiki__ | https://github.com/SSD2015/219244/wiki |
+| __Weekly Lab Materials__ | This repository (SSD2015/219244). Formerly at http://se.cpe.ku.ac.th/219244 |
