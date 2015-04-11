@@ -1,32 +1,90 @@
----
+### Week 12 (after Songkran)
+**No lab this week**
 
+**Assignment**: Preliminary round of _Voting for ExceedVote_. Details to be added
+
+---
 ### Week 11
 * Quiz on using JUnit
 * Authentication and intercepters in Play.  Intercepters let you easily and consistently secure all your non-public resources.  The Play tutorial section on [Adding Authentication](https://www.playframework.com/documentation/2.2.x/JavaGuide4) describes how.
 
+---
 ### Week 10
 * Quiz on Play Framework
 * Demo EL2 work products.
-* Create plan and start work on construction iteration 1 (CO1).
+* Create iteration plan and start work on construction iteration 1 (CO1).
 
 #### Week 10 Assignment
-* Create iteration plan according to template and add it to your project repository.
-* Your iteration goals should include (if you haven't already done these in previous iteration):
-** Users are authenticated before they can access voting pages
-** Users can vote and their votes are recorded
-** Application permits both "voting" (choose one contestant) and "ranking" (rank each contestant according to criteria)
-** There is an admin interface that shows who and logged in and who has voted
-** Admin can specify the voting time period (start - end) and change it, so as to start/stop voting.
-** System computes and displays results of voting.  While voting is open, only admin users can see results. After voting period has ended, everyone can see results.
+1. Create `Iteration Plan CO1.md` according to the template and add it to your project repository.
+2. Your iteration goals should include (if you haven't already done these in previous iterations):
+    * Users are authenticated before they can access voting pages
+    * Users can vote and their votes are recorded
+    * Application permits both "voting" (choose one contestant) and "ranking" (rank each contestant according to criteria)
+    * There is an admin interface that shows who and logged in and who has voted
+    * Admin can specify the voting time period (start - end) and change it, so as to start/stop voting.
+    * System computes and displays results of voting.  While voting is open, only admin users can see results. After voting period has ended, everyone can see results.
 
+---
+### Midterm
+No lab exam during midterm week.
 
+---
+### Week 8 Lab
+1. Unit Testing Intro.
+   * Useful intro: http://users.ece.utexas.edu/~miryung/teaching/EE461L-Spring2012/labs/testing.html
+   * JUnit Home: http://junit.org JUnit is included with Eclipse and Netbeans, but it doesn't have Javadoc or other docs. Download JUnit if you want the Javadoc.
+2. Unit Test Exercise. See week8/StackTesting.md for details.
+3. GRASP practice.
+4. Free time to work on projects.
 
+---
+### Week 7 Lab
+1. Each team will demo their application.
+2. Discuss and submit the Design Patterns assignment from week 6.
+3. Requirements update.
+4. Modeling exercise (TBA).
+5. Discussion of common glossary terms: Rating, Vote/Voting, "Organizer", Administrator. Many terms are being used for the contentants/entrants such as "Team", "Project", "Group".
+6. Report results of your retrospective meeting to the TAs individually.
+    * In the Roadmap below it lists what you should have by the end of EL1.  Check that you've done them.
+
+### Assignment for Week 7
+
+* **Class Assignment:** Create consistent set of terms and definitions for concepts like (these are my terms) "Ballot Item" (something to vote or judge), "Vote", "Rate", the "contestants" or "entrants" (the things we are voting/rating), "Administrator" (make more specific).  "Organizer" is likewise _way_ too vague.
+    * At eXceed Camp **who** selects the "voting" criteria and scoring method?  How is winner selected?
+    * Create a common glossary for the class.
+* **Add Tag**: Add a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging) named "EL1" to mark the Github commit that **corresponds to your work products for end of EL1**.  You can use the `git tag -a` command to create a tag, or Github "releases".
+    * If you've added more commits since the end of EL1, please find the commit that corresponds to your final EL1 end products and tag _that_ commit.
+    * You can see your commit history on Github by clicking on "commits" button.  It shows the commit checksum prefix and commit messages; you can use the prefix as argument to the `tag` command. 
+ * **Javadoc**: Write descriptive Javadoc class comments for each class and interface. Include @author tag.  Look at Java API for examples.
+* Create a plan for EL2 in file _Iteration Plan for EL2.md_ on Github. Please don't abbreviate the name.
+    * Include unfinished work from EL1.
+* Review and update your Domain Model.
+* Write fully dressed Use Cases for UC you will implement in this iteration.
+* Please include these goals in EL2 if you haven't already completed them:
+    1. Voter can submit his votes/ratings and system records them.
+    2. System returns clear acknowledgement when votes/ratngs are received.
+    3. Complete domain and software model of design to tally votes/ratings.
+    4. Implement software model for tallying votes/ratings.  Provide a UI to display results.
+    5. Write an Installation document (on Github) describing the steps to install and run your app.
+
+---
 ### Roadmap for Next Four Weeks
-We are starting Elaboration Iteration 1.  Your team will identify the main features in implement and select which to implement in EL1. To keep all teams on track, TAs and I will choose a common set of features we want all projects to implement.
+We are starting Elaboration Iteration 1.  Your team will identify features to implement in EL1. To keep all teams on track, TAs and I will choose a common set of features we want all projects to implement.
 
-By the end of EL1 you must have a running, deployable application.  You must also have good documentation, including refined, nearly complete set of requirements (as UC and Supplemental Requirements), and some design documentation, which you will bundle into a _Software Architecture Document_.  The SAD is for developers, so it isn't as rigorous as the SRS, but it should be accurate and complete.  Record important _design decisions_ in the SAD.  Your Web Frameworks review is a design decision.
+By the end of EL1 you must have a running, deployable application.  You must also have good documentation, including a better set of requirements (as UC and Supplemental Requirements) and some design documentation, which you will bundle into a _Software Architecture Document_.  The SAD is for developers, so it isn't as rigorous as the SRS, but it should be accurate and complete.  Record important _design decisions_ in the SAD.  Your Web Frameworks review is a design decision.
 
-During EL1, we'll study some useful technology.  I hope to cover Unit Testing, Logging, Persistence, and a few design patterns.  We will introduce and require teams to use _Issue Tracking_ using Github and Waffle.io, and Git _branches_ for development. 
+In the next few weeks, we'll study some useful technology.  I hope to cover Unit Testing, Logging, Persistence, and a few design patterns.  We will introduce and require teams to use _Issue Tracking_ and Milestones using Github and Waffle.io, and Git _branches_ for development.
+
+---
+### Week 6 Lab
+1. TA review of your progress. Be prepared to explain what you've done and what you plan to do this week (see [[Iteration Workflow]]).
+2. Introduction to Design Patterns, with some (hopefully) useful patterns.
+
+#### Week 6 Assignment
+* Complete the design pattern practice exercises. Discuss & submit next week.
+* Act on advice from TAs.  If they make suggestions via issues, either do them or add comment explaining why not.
+* Finish iteration EL1. See _Roadmap for the Next Four Weeks_ (above) for what work products you should have.
+* Have your web app running next week so you can demo it in lab.  It should be reachable from any computer in the lab via web browser.
 
 ---
 
