@@ -7,6 +7,8 @@
 ### Week 11
 * Quiz on using JUnit
 * Authentication and intercepters in Play.  Intercepters let you easily and consistently secure all your non-public resources.  The Play tutorial section on [Adding Authentication](https://www.playframework.com/documentation/2.2.x/JavaGuide4) describes how.
+* 
+**Assignment:** Review security of your application. Apply interceptors to all non-public resources.
 
 ---
 ### Week 10
