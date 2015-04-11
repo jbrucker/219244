@@ -1,3 +1,26 @@
+---
+
+### Week 11
+* Quiz on using JUnit
+* Authentication and intercepters in Play.  Intercepters let you easily and consistently secure all your non-public resources.  The Play tutorial section on [Adding Authentication](https://www.playframework.com/documentation/2.2.x/JavaGuide4) describes how.
+
+### Week 10
+* Quiz on Play Framework
+* Demo EL2 work products.
+* Create plan and start work on construction iteration 1 (CO1).
+
+#### Week 10 Assignment
+* Create iteration plan according to template and add it to your project repository.
+* Your iteration goals should include (if you haven't already done these in previous iteration):
+** Users are authenticated before they can access voting pages
+** Users can vote and their votes are recorded
+** Application permits both "voting" (choose one contestant) and "ranking" (rank each contestant according to criteria)
+** There is an admin interface that shows who and logged in and who has voted
+** Admin can specify the voting time period (start - end) and change it, so as to start/stop voting.
+** System computes and displays results of voting.  While voting is open, only admin users can see results. After voting period has ended, everyone can see results.
+
+
+
 ### Roadmap for Next Four Weeks
 We are starting Elaboration Iteration 1.  Your team will identify the main features in implement and select which to implement in EL1. To keep all teams on track, TAs and I will choose a common set of features we want all projects to implement.
 
